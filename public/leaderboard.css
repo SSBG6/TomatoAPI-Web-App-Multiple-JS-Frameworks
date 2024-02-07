@@ -1,0 +1,100 @@
+/* Reset default margin and padding */
+body, h1, ol, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Basic styling for the body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8e0e0; /* Light red background */
+    color: #333;
+    line-height: 1.6;
+    margin: 20px;
+  }
+  
+  /* Style for the leaderboard container */
+  .leaderboard {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    animation: fadeIn 0.8s ease-in-out forwards; /* Animation for the leaderboard container */
+  }
+  
+  /* Animation for fading in the leaderboard */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Style for the leaderboard title */
+  .leaderboard h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #d9534f; /* Red color for the title */
+  }
+  
+  /* Style for the leaderboard entries */
+  .leaderboard ol {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Style for each leaderboard entry */
+  .leaderboard ol li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    opacity: 0; /* Initially set entries to be invisible */
+    animation: slideIn 0.5s ease-in-out forwards; /* Animation for individual leaderboard entries */
+  }
+  
+  /* Animation for sliding in the leaderboard entries */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    /* Adding delays for each entry */
+    /* You can adjust the delays as needed */
+    /* For example, nth-child(1) starts immediately, nth-child(2) starts after 0.2s, nth-child(3) after 0.4s, and so on */
+    /* Modify according to your preference */
+    /* This is just an example */
+    &:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+    &:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+    /* ... */
+  }
+  
+  /* Style for username, score, and datetime in leaderboard entries */
+  .leaderboard ol li span {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* Style for the "No leaderboard entries yet" message */
+  .leaderboard p {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+  }

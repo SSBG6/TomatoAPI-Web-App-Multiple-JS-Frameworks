@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizmato; Leaderboard</title>
+  <link rel="stylesheet" href="/leaderboard.css"/>
+  <style>
+    /* Additional styles if needed */
+  </style>
+</head>
+<body>
+  <h1>Quizmato Leaderboard</h1>
+  <form>
+    <input type="button" value="Go back!" onclick="history.back()">
+   </form>
+  <div class="leaderboard">
+    <% if (leaderboard && leaderboard.length > 0) { %>
+      <ol>
+        <% leaderboard.forEach((entry, index) => { %>
+          <li>
+            <span><%= index + 1 %>.</span>
+            <span><%= entry.username %></span>
+            <span><%= entry.score %></span>
+            <span><%= entry.datetime%></span>
+          </li>
+        <% }); %>
+      </ol>
+    <% } else { %>
+      <p>No leaderboard entries yet.</p>
+    <% } %>
+  </div>
+</body>
+</html>

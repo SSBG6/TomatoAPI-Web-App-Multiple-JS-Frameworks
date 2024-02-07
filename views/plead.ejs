@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Leaderboard</title>
+    <link rel="stylesheet" href="/leaderboard.css"/>
+</head>
+<body>
+    <div class="leaderboard">
+        <h1>Your Scores</h1>
+        <% if (userScores.length > 0) { %>
+            <ol>
+                <% userScores.forEach(function(score, index) { %>
+                    <li>
+                        <span><%= index + 1 %></span>
+                        <span><%= score.username %></span>
+                        <span>Score: <%= score.score %></span>
+                        <span><%= score.datetime %></span>
+                    </li>
+                <% }); %>
+            </ol>
+        <% } else { %>
+            <p>No scores found for this user.</p>
+        <% } %>
+    </div>
+</body>
+</html>

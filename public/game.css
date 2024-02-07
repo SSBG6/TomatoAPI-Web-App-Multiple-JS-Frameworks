@@ -1,0 +1,120 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Replace 'game.gif' with your game-themed background */
+  background-image: url("game.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  width: 90%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Header styles */
+.container h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Question section styles */
+.question-section {
+  display: none;
+  margin-top: 20px;
+}
+
+/* Image styles */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+/* Timer, Score, Attempts styles */
+#time,
+#score,
+#attempts {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Logout button styles */
+#logout {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+#logout:hover {
+  background-color: #c0392b;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #777;
+}
+

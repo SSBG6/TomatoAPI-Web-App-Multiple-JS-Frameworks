@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("tomatos.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #0e0d0d;
+  }
+  
+  h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  app {
+    margin-top: 20px;
+  }
+  
+  app a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5em;
+    margin: 10px;
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  app a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }

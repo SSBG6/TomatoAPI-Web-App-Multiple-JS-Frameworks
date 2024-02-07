@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizmato; Registration</title>
+</head>
+<body>
+  <form>
+    <input type="button" value="Go back!" onclick="history.back()">
+  </form>
+  <div class="card-body">
+    <h2 class="text-center mb-4">User Registration</h2>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form action="/signup" method="POST">
+            <div class="form-group">
+              <label class="label" for="username">Username:</label>
+              <input type="text" class="form-control" placeholder="Enter your username" name="username" required>
+            </div>
+            <div class="form-group">
+              <label class="label" for="email">Email:</label>
+              <input type="email" class="form-control" placeholder="Enter your email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label class="label" for="password">Password:</label>
+              <input type="password" class="form-control" placeholder="Enter your password" name="password" required>
+            </div>
+            <button class="btn btn-primary btn-block">Submit</button>
+          </form>
+          <p class="text-center mt-3">Already a member? <a href="/login">Log in</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript imports remain unchanged -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

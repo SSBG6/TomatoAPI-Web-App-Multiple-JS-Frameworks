@@ -1,0 +1,86 @@
+/* Styles for the body */
+body {
+  font-family: 'Press Start 2P', cursive; /* Use a pixelated or game-style font */
+  background-color: #ffffff; /* Dark background resembling a gaming environment */
+  margin: 0;
+  padding: 0;
+  background-image: url("background.gif"); /* Replace with a game-themed background */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* Styles for the container holding the login form */
+.container {
+  max-width: 400px; /* Smaller width for a compact feel */
+  margin: 10% auto; /* Adjust margin for positioning */
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Glowing effect */
+}
+
+/* Styles for the form itself */
+.form-group {
+  margin-bottom: 25px; /* Increased margin for spacing */
+}
+
+.label {
+  font-weight: bold;
+  color: #fff; /* White label text */
+  transition: transform 0.3s ease; /* Smooth transition for label hover effect */
+}
+
+.label:hover {
+  transform: translateY(-3px); /* Move label up slightly on hover */
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #fff; /* White border */
+  border-radius: 8px;
+  background-color: transparent; /* Transparent input field */
+  color: #fff; /* White text */
+  transform-origin: left center; /* Set transform origin for animation */
+  animation: inputAnimation 0.3s ease-out forwards; /* Apply animation to input field */
+  transition: transform 0.3s ease; /* Smooth transition for input field hover effect */
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #42f55d; /* Bright green on focus */
+  box-shadow: 0 0 10px #42f55d; /* Green shadow on focus */
+}
+
+.form-control:hover {
+  transform: translateX(5px); /* Move input field to the right on hover */
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #42f55d; /* Bright green button */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for button hover effect */
+}
+
+.btn:hover {
+  background-color: #0cf500; /* Darker green on hover */
+  transform: scale(1.1); /* Scale up on hover */
+}
+/* Animation for input fields */
+@keyframes inputAnimation {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
